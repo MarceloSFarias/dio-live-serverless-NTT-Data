@@ -10,7 +10,7 @@ const insertItem = async (event) => {
   const createdAt = new Date().toISOString();
   const id = v4()
 
-  const dynamodb = new AWS.DynamoDB.DocumentClient();
+  const dynamodb = new AWS.DynamoDB.DocumentoCliente();
 
   const newItem = {
     id,
