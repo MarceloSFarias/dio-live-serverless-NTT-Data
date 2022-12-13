@@ -7,7 +7,7 @@ const updateItem = async (event) => {
   const {itemStatus} = JSON.parse(event.body);
   const {id} = event.pathParameters
 
-  const dynamodb = new AWS.DynamoDB.DocumentClient();
+  const dynamodb = new AWS.DynamoDB.DocumentoCliente();
 
   await dynamodb.update({
     TableName: "ItemTable",
